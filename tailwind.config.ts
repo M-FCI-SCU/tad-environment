@@ -12,7 +12,15 @@ export default {
 	theme: {
 		container: {
 			center: true,
-			padding: '2rem',
+			// Reduce padding on xs & sm screens; keep md+ the same
+			padding: {
+				DEFAULT: '1rem',
+				sm: '1rem',
+				md: '2rem',
+				lg: '2rem',
+				xl: '2rem',
+				'2xl': '2rem',
+			},
 			screens: {
 				'2xl': '1400px'
 			}
